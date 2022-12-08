@@ -106,3 +106,23 @@ footer {
     text-decoration: none;
     font-size: 150%;
 }
+
+/* Media Queries */
+
+@media screen and (min-width: 500px) {
+    #game-area {
+        width: 60%;
+        height: 450px;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    #game-area {
+        width: 45%;
+        height: 450px;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+}
