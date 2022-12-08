@@ -1,0 +1,11 @@
+:root {
+    --text: #fbf5ff;
+    --background: #000000;
+    --game-area: #440066;
+    --logo: #f5e912;
+    --button: #ff4864;
+}
+
+body {
+    font-family: Inconsolata, sans-serif;
+}
