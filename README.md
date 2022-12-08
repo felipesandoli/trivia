@@ -11,7 +11,7 @@ Developed by: [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandol
     - [User Stories](#user-stories)
     - [Site Owner Stories](#site-owner-stories)
 - [Design](#design)
-    - [Colours](#colours)
+    - [Colors](#colors)
     - [Fonts](#fonts)
     - [Wireframes](#wireframes)
 - [Technologies](#technologies)
@@ -47,9 +47,15 @@ The objective of the website is to provide a trivia quiz where the user can test
 
 ## Design
 
-### Colours
+### Colors
+
+The color palette was created using the color wheel palette generator from [Adobe Color](https://color.adobe.com/create/color-wheel).
+
+![color palette](./documentation/design/color-palette.png)
 
 ### Fonts
+
+The font Inconsolata, taken from Google Fonts was used for the body of the website.
 
 ### Wireframes
 
