@@ -59,6 +59,8 @@ The font Inconsolata, taken from Google Fonts was used for the body of the websi
 
 ### Wireframes
 
+![Mobile wireframes](./documentation/design/wireframes/mobile-wireframes.png)
+
 ## Technologies
 
 ## Features
