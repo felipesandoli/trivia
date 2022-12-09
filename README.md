@@ -21,6 +21,7 @@ Developed by: [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandol
     - [Manual Testing](#manual-testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
+    - [Modal](#modal)
 
 ## Project Overview
 
@@ -74,3 +75,7 @@ The font Inconsolata, taken from Google Fonts was used for the body of the websi
 ## Deployment
 
 ## Credits
+
+### Modal
+
+The modal containing the game instructions was created following a tutorial that can be found on [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
