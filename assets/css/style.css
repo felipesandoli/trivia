@@ -91,6 +91,22 @@ header {
     border: 2px solid var(--text);
 }
 
+.answer-btn {
+    width: 80%;
+    height: 50px;
+    padding: 15px;
+    text-align: left;
+    background-color: var(--game-area);
+    color: var(--text);
+    border: 1px solid var(--text);
+    border-radius: 15px;
+}
+
+.answer-btn:hover {
+    background-color: var(--text);
+    color: var(--game-area);
+}
+
 .hidden {
     display: none !important;
 }
