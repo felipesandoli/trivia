@@ -73,6 +73,23 @@ header {
     text-align: center;
 }
 
+.game-window h1 {
+    color: var(--logo);
+}
+
+.welcome-heading {
+    color: var(--text) !important;
+}
+
+#welcome input {
+    width: 200px;
+    height: 25px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: var(--text);
+    color: var(--game-area);
+}
+
 .btn {
     background-color: var(--button);
     color: var(--game-area);
