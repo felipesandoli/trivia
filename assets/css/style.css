@@ -52,7 +52,6 @@ header {
 /* Instruction modal created following w3schools tutorial */
 
 .modal {
-    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
