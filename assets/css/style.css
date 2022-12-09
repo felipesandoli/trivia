@@ -51,7 +51,7 @@ header {
 
 /* Game stage */
 
-#game-area {
+#game-stage {
     height: 300px;
     width: 300px;
     background-color: var(--game-area);
@@ -59,7 +59,7 @@ header {
     box-shadow: 0 0 5px 1px;
 }
 
-#welcome {
+.game-window {
     height: 100%;
     width: 100%;
     display: flex;
@@ -86,16 +86,8 @@ header {
     border: 2px solid var(--text);
 }
 
-/* Class for hiding content through JS */
-
 .hidden {
-    display: none;
-}
-
-/* Child elements to inherit display property */
-
-.hidden * {
-    display: inherit;
+    display: none !important;
 }
 
 /* Fotter */
