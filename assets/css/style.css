@@ -122,8 +122,9 @@ header {
 #welcome input {
     width: 200px;
     height: 25px;
+    font-weight: 600;
     border-radius: 15px;
-    padding: 5px;
+    padding: 5px 15px;
     background-color: var(--text);
     color: var(--game-area);
 }

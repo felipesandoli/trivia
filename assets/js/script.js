@@ -17,3 +17,13 @@ window.onclick = function(event) {
         modal.classList.add("hidden");
     }
 }
+
+// Function for diplaying the gaming window for playing the game for the first time
+
+function displayGameWindow() {
+    
+}
+
+function validateUsername () {
+
+}
