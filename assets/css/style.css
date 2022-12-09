@@ -77,10 +77,25 @@ header {
     text-transform: uppercase;
     border: none;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:hover {
     border: 2px solid var(--text);
+}
+
+/* Class for hiding content through JS */
+
+.hidden {
+    display: none;
+}
+
+/* Child elements to inherit display property */
+
+.hidden * {
+    display: inherit;
 }
 
 /* Fotter */
