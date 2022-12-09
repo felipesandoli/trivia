@@ -68,6 +68,11 @@ header {
     align-items: center;
 }
 
+.game-window p {
+    padding: 0 15px;
+    text-align: center;
+}
+
 .btn {
     background-color: var(--button);
     color: var(--game-area);
@@ -117,14 +122,14 @@ footer {
 /* Media Queries */
 
 @media screen and (min-width: 500px) {
-    #game-area {
+    #game-stage {
         width: 60%;
         height: 450px;
     }    
 }
 
 @media screen and (min-width: 1200px) {
-    #game-area {
+    #game-stage {
         width: 45%;
         height: 450px;
     }
