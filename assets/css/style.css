@@ -65,7 +65,7 @@ header {
 .modal-content {
     background-color: var(--game-area);
     margin: 15% auto;
-    width: 60%;
+    width: 90%;
     height: 45%;
     padding: 15px;
     border-radius: 15px;
@@ -196,7 +196,12 @@ footer {
     #game-stage {
         width: 60%;
         height: 450px;
-    }    
+    }
+    
+    .modal-content {
+        width: 60%;
+        margin-top: 5%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
