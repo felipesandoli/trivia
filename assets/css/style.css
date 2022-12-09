@@ -76,13 +76,13 @@ header {
     gap: 15px;
 }
 
-.close-btn {
+#close-btn {
     color: var(--text);
     font-size: 32px;
     align-self: flex-end;
 }
 
-.close-btn:hover {
+#close-btn:hover {
     font-weight: bold;
     cursor: pointer;
 }
