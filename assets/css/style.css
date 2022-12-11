@@ -37,12 +37,14 @@ header {
 
 .logo {
     color: var(--logo);
+    padding: 15px;
+    line-height: 20px;
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding: 15px;
-    line-height: 20px;
+    
 }
 
 #instructions-btn {
