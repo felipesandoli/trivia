@@ -24,7 +24,11 @@ window.onclick = function(event) {
 // Function for diplaying the gaming window for playing the game for the first time
 
 function displayGameWindow(username) {
-    console.log(username);
+    const welcomeWindow = document.getElementById("welcome");
+    const startGameWindow = document.getElementById("start-play-again");
+    welcomeWindow.classList.add("hidden");
+    startGameWindow.classList.remove("hidden");
+    startGameWindow.children[0].innerText = `Hi ${username}`;
 }
 
 function validateUsername () {
