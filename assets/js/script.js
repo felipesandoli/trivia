@@ -29,6 +29,8 @@ function displayGameWindow() {
     welcomeWindow.classList.add("hidden");
     startGameWindow.classList.remove("hidden");
     startGameWindow.children[0].innerText = `Hi ${localStorage.getItem("username")}`;
+    const startGame = document.getElementById("start-restart");
+    startGame.addEventListener("click", runGame);
 }
 
 function validateUsername () {
@@ -41,4 +43,8 @@ function validateUsername () {
         localStorage.setItem("username", username.value);
         displayGameWindow();
     }
+}
+
+function runGame() {
+    
 }
