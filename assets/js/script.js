@@ -46,11 +46,19 @@ function validateUsername () {
 }
 
 function runGame() {
+    // Clears screen before loading the questions
+    const startGameWindow = document.getElementById("start-play-again");
+    startGameWindow.classList.add("hidden");
     // Getting data from Open Trivia DataBase following tutorial from MDN
     fetch("https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=multiple")
     .then(res => res.json())
     .then(data => {
         questionsAPI = data.results;
-    });
+    })
+    .then(() => {
+        const questionWindow = document.getElementById("questions");
+        questionWindow.classList.remove("hidden");
+    })
+    
 }
 
