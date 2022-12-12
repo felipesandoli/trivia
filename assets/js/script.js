@@ -21,7 +21,7 @@ window.onclick = function(event) {
     }
 }
 
-// Function for diplaying the gaming window for playing the game for the first time
+// Function for diplaying a personalized message to the user before starting the game
 
 function displayGameWindow() {
     const welcomeWindow = document.getElementById("welcome");
@@ -46,5 +46,11 @@ function validateUsername () {
 }
 
 function runGame() {
-    
+    // Getting data from Open Trivia DataBase following tutorial from MDN
+    fetch("https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=multiple")
+    .then(res => res.json())
+    .then(data => {
+        questionsAPI = data.results;
+    });
 }
+
