@@ -23,12 +23,12 @@ window.onclick = function(event) {
 
 // Function for diplaying the gaming window for playing the game for the first time
 
-function displayGameWindow(username) {
+function displayGameWindow() {
     const welcomeWindow = document.getElementById("welcome");
     const startGameWindow = document.getElementById("start-play-again");
     welcomeWindow.classList.add("hidden");
     startGameWindow.classList.remove("hidden");
-    startGameWindow.children[0].innerText = `Hi ${username}`;
+    startGameWindow.children[0].innerText = `Hi ${localStorage.getItem("username")}`;
 }
 
 function validateUsername () {
@@ -38,6 +38,7 @@ function validateUsername () {
     } else if (username.value.length < 5){
         alert("Please choose a username with at least 5 characters");
     } else {
-        displayGameWindow(username.value);
+        localStorage.setItem("username", username.value);
+        displayGameWindow();
     }
 }
