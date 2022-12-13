@@ -53,7 +53,7 @@ function runGame() {
     fetch("https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=multiple")
     .then(res => res.json())
     .then(data => {
-        questionsAPI = data.results;
+        questionsList = data.results;
     })
     .then(() => {
         const questionWindow = document.getElementById("questions");
