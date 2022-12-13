@@ -69,6 +69,13 @@ function displayQuestion(question, questionNumber) {
     const answerElements = document.getElementsByClassName("answer-btn");
     questionHeader.innerHTML = `Question ${questionNumber+1}/10`;
     questionElement.innerHTML = question.question;
+    
+    // add all answers to a single array with objects containing the answer and true or false for correct and incorrect answers.
+    let answers = [{answer: question.correct_answer, correct: true}];
+    for (incorrectAnswers of question.incorrect_answers) {
+        answers.push({answer: incorrectAnswers, correct: false});
+    }
+    
 }
 
 function displayCorrectAnswer() {
