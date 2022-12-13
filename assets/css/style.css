@@ -169,7 +169,11 @@ header {
     display: none !important;
 }
 
-/* Fotter */
+.hidden-in-place {
+    visibility: hidden;
+}
+
+/* Footer */
 
 footer {
     height: 75px;
