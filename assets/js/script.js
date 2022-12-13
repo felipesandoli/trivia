@@ -58,6 +58,7 @@ function runGame() {
     .then(() => {
         const questionWindow = document.getElementById("questions");
         questionWindow.classList.remove("hidden");
+        console.log(questionsList);
     })
     
 }
