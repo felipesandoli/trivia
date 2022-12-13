@@ -76,6 +76,9 @@ function displayQuestion(question, questionNumber) {
         answers.push({answer: incorrectAnswers, correct: false});
     }
     
+    //randomizes answers, taken from javascript.info
+    answers.sort(() => Math.random() - 0.5);
+
 }
 
 function displayCorrectAnswer() {
