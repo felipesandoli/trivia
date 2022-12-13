@@ -46,6 +46,7 @@ function validateUsername () {
 }
 
 function runGame() {
+    let questionNumber = 0;
     // Clears screen before loading the questions
     const startGameWindow = document.getElementById("start-play-again");
     startGameWindow.classList.add("hidden");
@@ -58,11 +59,16 @@ function runGame() {
     .then(() => {
         const questionWindow = document.getElementById("questions");
         questionWindow.classList.remove("hidden");
+        displayQuestion(questionsList[questionNumber], questionNumber);
     })
 }
 
-function displayQuestion(question) {
-
+function displayQuestion(question, questionNumber) {
+    const questionHeader = document.getElementById("questions").children[0];
+    const questionElement = document.getElementById("questions").children[1];
+    const answerElements = document.getElementsByClassName("answer-btn");
+    questionHeader.innerHTML = `Question ${questionNumber+1}/10`;
+    questionElement.innerHTML = question.question;
 }
 
 function displayCorrectAnswer() {
