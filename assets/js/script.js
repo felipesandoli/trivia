@@ -59,6 +59,20 @@ function runGame() {
         const questionWindow = document.getElementById("questions");
         questionWindow.classList.remove("hidden");
     })
-    
 }
 
+function displayQuestion(question) {
+
+}
+
+function displayCorrectAnswer() {
+
+}
+
+function checkAnswer() {
+
+}
+
+function updateScore(score) {
+
+}
