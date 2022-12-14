@@ -82,6 +82,12 @@ function displayQuestion(question, questionNumber) {
     // Add answers to screen
     for (let i = 0; i < 4; i++) {
         answerElements[i].innerHTML = answers[i].answer;
+        // Add data attribute for marking correct answer
+        if (answers[i].correct) {
+            answerElements[i].setAttribute("data-bool", "true");
+        } else {
+            answerElements[i].setAttribute("data-bool", "false");
+        }
     }
 }
 
