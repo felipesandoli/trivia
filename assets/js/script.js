@@ -109,6 +109,12 @@ function displayCorrectAnswer(isCorrect, element) {
             }
         }
     }
+
+    // Remove event listner from answer buttons
+    for (let answer of answerElements) {
+        answer.removeEventListener("click", checkAnswer);
+    }
+
 }
 
 function checkAnswer() {
