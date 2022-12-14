@@ -60,6 +60,11 @@ function runGame() {
         const questionWindow = document.getElementById("questions");
         questionWindow.classList.remove("hidden");
         displayQuestion(questionsList[questionNumber], questionNumber);
+        // Add event listener to answer buttons
+        const answerElements = document.getElementsByClassName("answer-btn");
+        for (let answer of answerElements) {
+            answer.addEventListener("click", checkAnswer);
+        }
     })
 }
 
@@ -96,7 +101,7 @@ function displayCorrectAnswer() {
 }
 
 function checkAnswer() {
-
+    console.log(this.innerHTML);
 }
 
 function updateScore(score) {
