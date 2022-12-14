@@ -101,9 +101,14 @@ function displayCorrectAnswer() {
 }
 
 function checkAnswer() {
-    console.log(this.innerHTML);
+    // Use of data attribute based on the Love Maths walkthrough project
+    if (this.getAttribute("data-bool") === "true") {
+        console.log("correct answer");
+    } else {
+        console.log("incorrect answer");
+    }
 }
 
 function updateScore(score) {
-
+    
 }
