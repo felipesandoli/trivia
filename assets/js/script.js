@@ -96,16 +96,28 @@ function displayQuestion(question, questionNumber) {
     }
 }
 
-function displayCorrectAnswer() {
-
+function displayCorrectAnswer(isCorrect, element) {
+    const answerElements = document.getElementsByClassName("answer-btn");
+    
+    if (isCorrect) {
+        element.style.backgroundColor = "green";
+    } else {
+        element.style.backgroundColor = "red";
+        for (let answer of answerElements) {
+            if (answer.getAttribute("data-bool") === "true") {
+                answer.style.backgroundColor = "green";
+            }
+        }
+    }
 }
 
 function checkAnswer() {
     // Use of data attribute based on the Love Maths walkthrough project
     if (this.getAttribute("data-bool") === "true") {
-        console.log("correct answer");
+        updateScore();
+        displayCorrectAnswer(true, this);
     } else {
-        console.log("incorrect answer");
+        displayCorrectAnswer(false, this);
     }
 }
 
