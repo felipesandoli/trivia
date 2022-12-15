@@ -156,6 +156,16 @@ function showNextQuestion() {
     questionNumber++;
     questionHeading.removeAttribute("data-index");
 
+    // Reset answer buttons background color
+    resetButtons();
+
     // run game with next question
     runGame(questionNumber);
+}
+
+function resetButtons() {
+    const answerElements = document.getElementsByClassName("answer-btn");
+    for (let answer of answerElements) {
+        
+    }
 }
