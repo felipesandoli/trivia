@@ -155,4 +155,7 @@ function showNextQuestion() {
     let questionNumber = parseInt(questionHeading.getAttribute("data-index"));
     questionNumber++;
     questionHeading.removeAttribute("data-index");
+
+    // run game with next question
+    runGame(questionNumber);
 }
