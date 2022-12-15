@@ -164,5 +164,12 @@ function showNextQuestion() {
 }
 
 function resetButtons() {
-    
+    const answerElements = document.getElementsByClassName("answer-btn");
+    for (let answer of answerElements) {
+        if (answer.classList.contains("correct-answer")) {
+            answer.classList.remove("correct-answer");
+        } else if (answer.classList.contains("incorrect-answer")) {
+            answer.classList.remove("incorrect-answer");
+        }
+    }
 }
