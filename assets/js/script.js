@@ -5,6 +5,8 @@ const modal = document.getElementById("instructions-modal");
 const playButton = document.getElementById("play");
 playButton.addEventListener("click", validateUsername);
 
+let questionsList;
+
 // Functions to display and close modal, adapted from w3schools
 
 instructionsButton.onclick = function() {
@@ -29,8 +31,8 @@ function displayGameWindow() {
     welcomeWindow.classList.add("hidden");
     startGameWindow.classList.remove("hidden");
     startGameWindow.children[0].innerText = `Hi ${localStorage.getItem("username")}`;
-    const startGame = document.getElementById("start-restart");
-    startGame.addEventListener("click", runGame);
+    const startGameBtn = document.getElementById("start-restart");
+    startGameBtn.addEventListener("click", startGame);
 }
 
 function validateUsername () {
@@ -45,28 +47,34 @@ function validateUsername () {
     }
 }
 
-function runGame() {
-    let questionNumber = 0;
-    // Clears screen before loading the questions
-    const startGameWindow = document.getElementById("start-play-again");
-    startGameWindow.classList.add("hidden");
+function loadQuestions() {
     // Getting data from Open Trivia DataBase following tutorial from MDN
     fetch("https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=multiple")
     .then(res => res.json())
     .then(data => {
         questionsList = data.results;
     })
-    .then(() => {
-        const questionWindow = document.getElementById("questions");
-        questionWindow.classList.remove("hidden");
-        displayQuestion(questionsList[questionNumber], questionNumber);
-        // Add event listener to answer buttons
-        const answerElements = document.getElementsByClassName("answer-btn");
-        for (let answer of answerElements) {
-            answer.addEventListener("click", checkAnswer);
-        }
-    })
+    .then(() => runGame(0));
 }
+
+function startGame() {
+    // Clears screen before loading the questions
+    const startGameWindow = document.getElementById("start-play-again");
+    startGameWindow.classList.add("hidden");
+    loadQuestions();
+}
+
+function runGame(questionNumber) {
+    const questionWindow = document.getElementById("questions");
+    questionWindow.classList.remove("hidden");
+    displayQuestion(questionsList[questionNumber], questionNumber);
+    // Add event listener to answer buttons
+    const answerElements = document.getElementsByClassName("answer-btn");
+    for (let answer of answerElements) {
+         answer.addEventListener("click", checkAnswer);
+    }
+}
+
 
 function displayQuestion(question, questionNumber) {
     const questionHeader = document.getElementById("questions").children[0];
