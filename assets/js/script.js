@@ -157,7 +157,7 @@ function showNextQuestion() {
     resetButtons();
 
     // run game with next question
-    runGame(questionNumber);
+    (questionNumber < 10) ? runGame(questionNumber) : displayFinalScore();
 }
 
 function resetButtons() {
@@ -169,4 +169,8 @@ function resetButtons() {
             answer.classList.remove("incorrect-answer");
         }
     }
+}
+
+function displayFinalScore() {
+    console.log(score);
 }
