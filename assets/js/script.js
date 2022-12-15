@@ -109,14 +109,12 @@ function displayCorrectAnswer(isCorrect, element) {
     const answerElements = document.getElementsByClassName("answer-btn");
     
     if (isCorrect) {
-        element.classList.remove("answer-btn");
         element.classList.add("correct-answer");
     } else {
-        element.classList.remove("answer-btn");
         element.classList.add("incorrect-answer");
         for (let answer of answerElements) {
             if (answer.getAttribute("data-bool") === "true") {
-                answer.style.backgroundColor = "green";
+                answer.classList.add("correct-answer");
             }
         }
     }
@@ -166,8 +164,5 @@ function showNextQuestion() {
 }
 
 function resetButtons() {
-    const answerElements = document.getElementsByClassName("answer-btn");
-    for (let answer of answerElements) {
-        
-    }
+    
 }
