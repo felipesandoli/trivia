@@ -23,6 +23,7 @@ Developed by: [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandol
 - [Credits](#credits)
     - [Modal](#modal)
     - [API](#api)
+    - [HTML Data Attributes](#html-data-attributes)
 
 ## Project Overview
 
@@ -84,3 +85,7 @@ The modal containing the game instructions was created following a tutorial that
 ### API
 
 The questions displayed in the game were taken from the [OPEN TRIVIA DATABASE](https://opentdb.com/) API. A tutorial from [MDN](https://developer.mozilla.org/en-US/) was followed to write the code for getting the data from Open Trivia Database. The totorial can be found on the following link: [MDN-fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
+
+### HTML Data Attributes
+
+Data attributes elements were used for storing values to elements to be retrieved later in other functions. The Love Maths walkthrough project was used as inspiration for this.
