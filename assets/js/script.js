@@ -126,6 +126,7 @@ function displayCorrectAnswer(isCorrect, element) {
     // Display next button for displaying next question
     const nextButton = document.getElementById("next-btn");
     nextButton.classList.remove("hidden-in-place");
+    nextButton.addEventListener("click", showNextQuestion);
 }
 
 function checkAnswer() {
@@ -140,4 +141,11 @@ function checkAnswer() {
 
 function updateScore(score) {
     
+}
+
+function showNextQuestion() {
+    // Remove event listener and hide next button
+    const nextButton = document.getElementById("next-btn");
+    nextButton.removeEventListener("click", showNextQuestion);
+    nextButton.classList.add("hidden-in-place");
 }
