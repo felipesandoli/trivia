@@ -123,6 +123,9 @@ function displayCorrectAnswer(isCorrect, element) {
         answer.removeEventListener("click", checkAnswer);
     }
 
+    // Display next button for displaying next question
+    const nextButton = document.getElementById("next-btn");
+    nextButton.classList.remove("hidden-in-place");
 }
 
 function checkAnswer() {
