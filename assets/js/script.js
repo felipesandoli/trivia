@@ -6,6 +6,7 @@ const playButton = document.getElementById("play");
 playButton.addEventListener("click", validateUsername);
 
 let questionsList;
+let score = 0;
 
 // Functions to display and close modal, adapted from w3schools
 
@@ -133,15 +134,11 @@ function displayCorrectAnswer(isCorrect, element) {
 function checkAnswer() {
     // Use of data attribute based on the Love Maths walkthrough project
     if (this.getAttribute("data-bool") === "true") {
-        updateScore();
+        score++;
         displayCorrectAnswer(true, this);
     } else {
         displayCorrectAnswer(false, this);
     }
-}
-
-function updateScore(score) {
-    
 }
 
 function showNextQuestion() {
