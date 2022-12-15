@@ -172,5 +172,21 @@ function resetButtons() {
 }
 
 function displayFinalScore() {
-    console.log(score);
+    const questionWindow = document.getElementById("questions");
+    const finalWindow = document.getElementById("start-play-again");
+    const playAgain = document.getElementById("start-restart");
+    questionWindow.classList.add("hidden");
+    finalWindow.classList.remove("hidden");
+    finalWindow.children[1].innerHTML = `
+            You got ${score}/10 questions right!
+            <br>
+            <br>
+            If you would like to play again, just hit the PLAY AGAIN button bellow.
+        `;
+    if (score > 5) {
+        finalWindow.children[0].innerHTML = `Congratulations ${localStorage.getItem("username")}!`;
+    } else {
+        finalWindow.children[0].innerHTML = `Better Luck next time ${localStorage.getItem("username")}!`;
+    }
+    playAgain.innerHTML = "Play Again";    
 }
