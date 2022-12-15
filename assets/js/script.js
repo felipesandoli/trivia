@@ -82,7 +82,7 @@ function displayQuestion(question, questionNumber) {
     const answerElements = document.getElementsByClassName("answer-btn");
     questionHeader.innerHTML = `Question ${questionNumber+1}/10`;
     questionElement.innerHTML = question.question;
-    questionElement.setAttribute("data-index", questionNumber);
+    questionHeader.setAttribute("data-index", questionNumber);
     
     // add all answers to a single array with objects containing the answer and true or false for correct and incorrect answers.
     let answers = [{answer: question.correct_answer, correct: true}];
@@ -152,4 +152,7 @@ function showNextQuestion() {
 
     // Get current question number and set it as the index for next question
     const questionHeading = document.getElementById("questions").children[0];
+    let questionNumber = parseInt(questionHeading.getAttribute("data-index"));
+    questionNumber++;
+    questionHeading.removeAttribute("data-index");
 }
