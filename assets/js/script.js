@@ -109,9 +109,11 @@ function displayCorrectAnswer(isCorrect, element) {
     const answerElements = document.getElementsByClassName("answer-btn");
     
     if (isCorrect) {
-        element.style.backgroundColor = "green";
+        element.classList.remove("answer-btn");
+        element.classList.add("correct-answer");
     } else {
-        element.style.backgroundColor = "red";
+        element.classList.remove("answer-btn");
+        element.classList.add("incorrect-answer");
         for (let answer of answerElements) {
             if (answer.getAttribute("data-bool") === "true") {
                 answer.style.backgroundColor = "green";
