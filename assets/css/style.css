@@ -160,6 +160,28 @@ header {
     border-radius: 15px;
 }
 
+.correct-answer {
+    width: 80%;
+    height: 50px;
+    padding: 15px;
+    text-align: left;
+    background-color: green;
+    color: var(--text);
+    border: 1px solid var(--text);
+    border-radius: 15px;
+}
+
+.incorrect-answer {
+    width: 80%;
+    height: 50px;
+    padding: 15px;
+    text-align: left;
+    background-color: red;
+    color: var(--text);
+    border: 1px solid var(--text);
+    border-radius: 15px;
+}
+
 .answer-btn:hover {
     background-color: var(--text);
     color: var(--game-area);
