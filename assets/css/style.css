@@ -92,8 +92,8 @@ header {
 /* Game stage */
 
 #game-stage {
-    height: 300px;
-    width: 300px;
+    height: 450px;
+    width: 90%;
     background-color: var(--game-area);
     border-radius: 15px;
     box-shadow: 0 0 5px 1px;
@@ -209,7 +209,7 @@ footer {
 
 @media screen and (min-width: 500px) {
     #game-stage {
-        width: 60%;
+        width: 80%;
         height: 450px;
     }
     
@@ -221,7 +221,7 @@ footer {
 
 @media screen and (min-width: 1200px) {
     #game-stage {
-        width: 45%;
+        width: 60%;
         height: 450px;
     }
 
