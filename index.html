@@ -30,6 +30,7 @@
         </div>
     </div>
     <section id="game-stage">
+        <!-- Initial window, welcome message, username input -->
         <div id="welcome" class="game-window">
             <h1 class="welcome-heading">Welcome to</h1>
             <div class="logo">
@@ -40,6 +41,7 @@
             <input id="username" type="text" required>
             <button id="play" class="btn">Play</button>
         </div>
+        <!-- Greetings window to be displayed after entering username and final window to display score after the game ends -->
         <div id="start-play-again" class="game-window hidden">
             <h1>Hi username</h1>
             <p>
@@ -52,6 +54,7 @@
             </p>
             <button id="start-restart" class="btn">Start</button>
         </div>
+        <!-- Game window where questions are displayed -->
         <div id="questions" class="game-window hidden">
             <h1>Question X/X</h1>
             <p>The question to be displayed?</p>
@@ -75,7 +78,7 @@
     </footer>
     <!-- Font Awesome script -->
     <script src="https://kit.fontawesome.com/f6243e1b74.js" crossorigin="anonymous"></script>
-
+    <!-- game script -->
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
