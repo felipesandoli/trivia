@@ -181,6 +181,10 @@ header {
     visibility: hidden;
 }
 
+#start-play-again h1 {
+    text-align: center;
+}
+
 /* Footer */
 
 footer {
