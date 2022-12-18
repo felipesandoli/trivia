@@ -9,7 +9,9 @@ let questionsList;
 let score = 0;
 
 // Functions to display and close modal, adapted from w3schools
-
+/**
+ *  Displays the game instructions as a modal
+ */
 instructionsButton.onclick = function() {
     modal.classList.remove("hidden");
 }
@@ -25,7 +27,10 @@ window.onclick = function(event) {
 }
 
 // Function for diplaying a personalized message to the user before starting the game
-
+/**
+ *  Hides the welcome window and displays a greeting message to the user with their username, 
+ *  displays button for starting the game
+ */
 function displayGameWindow() {
     const welcomeWindow = document.getElementById("welcome");
     const startGameWindow = document.getElementById("start-play-again");
@@ -36,6 +41,10 @@ function displayGameWindow() {
     startGameBtn.addEventListener("click", startGame);
 }
 
+/**
+ *  Validates the username, does not allow empty field or usernames with less than 5
+ *  characters
+ */
 function validateUsername () {
     let username = document.getElementById("username");
     if (username.value === "") {
@@ -48,6 +57,9 @@ function validateUsername () {
     }
 }
 
+/**
+ *  Load questions from Open Trivia Database API, calls runGame function for displaying the first question
+ */
 function loadQuestions() {
     // Getting data from Open Trivia DataBase following tutorial from MDN
     fetch("https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=multiple")
@@ -58,13 +70,19 @@ function loadQuestions() {
     .then(() => runGame(0));
 }
 
+
+// This function hides the greetings and final window before calling the loadQuestions function, the time in which the window stays blank
+// is the time spent loading the questions, the next game window will only appear after the questiosn are loaded.
 function startGame() {
     // Clears screen before loading the questions
     const startGameWindow = document.getElementById("start-play-again");
     startGameWindow.classList.add("hidden");
     loadQuestions();
 }
-
+/**
+ *  Display the question window, call function for displaying the question content and add event listeners for the answer buttons.
+ *  Clicking on an answer will call the function that cheks the answer
+ */
 function runGame(questionNumber) {
     const questionWindow = document.getElementById("questions");
     questionWindow.classList.remove("hidden");
@@ -76,7 +94,11 @@ function runGame(questionNumber) {
     }
 }
 
-
+/**
+ *  Display the question and answers, add a data attribute to the question for storing the question index in the questions array.
+ *  Add the answers for that question index to a single array and randomizes it, add a data attribute to the answer elements for storing
+ *  which answer is correct
+ */
 function displayQuestion(question, questionNumber) {
     const questionHeader = document.getElementById("questions").children[0];
     const questionElement = document.getElementById("questions").children[1];
@@ -106,6 +128,13 @@ function displayQuestion(question, questionNumber) {
     }
 }
 
+/**
+ *  Gives visual feedback for the user to let them know if they got the answer right. If they chose the correct answer,
+ *  the answer chosen will turn green, if they chose an incorrect answer, this will turn red, and the correct answer green.
+ *  Removes the event listener from the buttons, so the user cannot chose another answer for the same question. 
+ *  Displays the next button for getting the next question 
+ *  
+ */
 function displayCorrectAnswer(isCorrect, element) {
     const answerElements = document.getElementsByClassName("answer-btn");
     
@@ -131,6 +160,9 @@ function displayCorrectAnswer(isCorrect, element) {
     nextButton.addEventListener("click", showNextQuestion);
 }
 
+/**
+ *  Checks the data attribute of the answer chosen for checking correctness
+ */
 function checkAnswer() {
     // Use of data attribute based on the Love Maths walkthrough project
     if (this.getAttribute("data-bool") === "true") {
@@ -141,6 +173,11 @@ function checkAnswer() {
     }
 }
 
+/**
+ *  Hides the next question button. Get the question index from the data attribute, increments it for
+ *  displaying the next question.  If there are still questions left, displays next question, 
+ *  if the currect question is the last, displays the final screen with the score.
+ */
 function showNextQuestion() {
     // Remove event listener and hide next button
     const nextButton = document.getElementById("next-btn");
@@ -160,6 +197,10 @@ function showNextQuestion() {
     (questionNumber < 10) ? runGame(questionNumber) : displayFinalScore();
 }
 
+
+/**
+ *  Resets the color of the answer buttons.
+ */
 function resetButtons() {
     const answerElements = document.getElementsByClassName("answer-btn");
     for (let answer of answerElements) {
@@ -171,6 +212,10 @@ function resetButtons() {
     }
 }
 
+/**
+ *  Displays the final score, with a customized message depending on how many answers the user got right.
+ *  Displays button that allows the user to start the game again.
+ */
 function displayFinalScore() {
     const questionWindow = document.getElementById("questions");
     const finalWindow = document.getElementById("start-play-again");
