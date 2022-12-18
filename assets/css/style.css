@@ -68,7 +68,7 @@ header {
     background-color: var(--game-area);
     margin: 15% auto;
     width: 90%;
-    height: 45%;
+    height: auto;
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 0 5px 1px;
@@ -76,6 +76,12 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+}
+
+.modal-content li {
+    text-align: justify;
+    list-style: inside;
+    padding: 5px;
 }
 
 #close-btn {
