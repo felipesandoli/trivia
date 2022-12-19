@@ -91,6 +91,15 @@ The following tools were also used during development:
 
 ## Deployment
 
+This project was deployed through GitHub Pages. The following steps were followed for this:
+
+- Navigate to the [repository](https://github.com/felipesandoli/trivia) in GitHub
+- Select the settings tab
+- On the left navigation menu, under Code and Automation, select Pages
+- Select Deploy from a branch under source
+- Select the main branch
+- After the pages reload, the link to the deplyed page will show up at the top.
+
 ## Credits
 
 ### Modal
