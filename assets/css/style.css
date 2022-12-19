@@ -119,7 +119,7 @@ header {
     text-align: center;
 }
 
-.game-window h1 {
+.game-window h2 {
     color: var(--logo);
 }
 
@@ -135,6 +135,10 @@ header {
     padding: 5px 15px;
     background-color: var(--text);
     color: var(--game-area);
+}
+
+#welcome .logo {
+    font-size: 175%;
 }
 
 .btn {
@@ -187,7 +191,7 @@ header {
     visibility: hidden;
 }
 
-#start-play-again h1 {
+#start-play-again h2 {
     text-align: center;
 }
 
