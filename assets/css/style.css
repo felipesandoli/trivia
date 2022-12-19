@@ -3,7 +3,7 @@
     --background: #000000;
     --game-area: #440066;
     --logo: #f5e912;
-    --button: #ff4864;
+    --button: #FF6181;
 }
 
 * {
@@ -143,7 +143,7 @@ header {
 
 .btn {
     background-color: var(--button);
-    color: var(--game-area);
+    color: var(--background);
     width: 150px;
     height: 50px;
     font-weight: 900;
