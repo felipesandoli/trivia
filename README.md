@@ -1,6 +1,6 @@
 # Trivia 
 
-[Visit the live webpage](#)
+[Visit the live webpage](https://felipesandoli.github.io/trivia/)
 
 Developed by: [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandoli)
 
