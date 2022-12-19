@@ -66,6 +66,21 @@ The font Inconsolata, taken from Google Fonts was used for the body of the websi
 
 ## Technologies
 
+This project was developed using the following languages:
+
+- HTML
+- CSS
+- JavaScript
+
+The following tools were also used during development:
+
+- Balsamiq
+- Font Awesome
+- Git
+- Github
+- Google Fonts
+- Chrome Dev Tools
+
 ## Features
 
 ## Testing
