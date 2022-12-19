@@ -18,6 +18,9 @@ Developed by: [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandol
 - [Features](#features)
 - [Testing](#testing)
     - [Validation](#validation)
+        -[HTML Validation](#html-validation)
+        -[CSS Validation](#css-validation)
+        -[Accessibility Validation](#accessibility-validation)
     - [Manual Testing](#manual-testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -86,6 +89,24 @@ The following tools were also used during development:
 ## Testing
 
 ### Validation
+
+#### HTML Validation
+
+The page was validated using the W3C Markup Validator. The first validation indicated a wrong heading structure and also indicated that the href url for the google fonts was broken down into two separate lines. When reestructuring the headings, the closing tags were left unchanged, this resulted in further errors. After fixing these, the page passed validation.
+
+![HTML Validation](./documentation/validation/html-validation.png)
+
+#### CSS Validation
+
+WC3 Jigsaw Validator was used for validating CSS. No errors were found.
+
+![CSS Validation](./documentation/validation/css-validation.png)
+
+#### Accessibility Validation
+
+Wave Accessibility Validator was used for ensuring all accessibility standards were followed. The first test showed a missing label for the username input and low contrast between the button background and text. Validation passed after fixing these.
+
+![Wave Validation](./documentation/validation/accessibility-validation.png)
 
 ### Manual testing
 
