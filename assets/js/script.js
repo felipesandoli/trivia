@@ -14,17 +14,17 @@ let score = 0;
  */
 instructionsButton.onclick = function() {
     modal.classList.remove("hidden");
-}
+};
 
 closeModal.onclick = function() {
     modal.classList.add("hidden");
-}
+};
 
 window.onclick = function(event) {
     if (event.target === modal) {
         modal.classList.add("hidden");
     }
-}
+};
 
 // Function for diplaying a personalized message to the user before starting the game
 /**
