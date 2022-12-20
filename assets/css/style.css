@@ -264,7 +264,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .copyright, .social-links, .social-links a {
