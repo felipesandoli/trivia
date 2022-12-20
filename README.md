@@ -109,6 +109,12 @@ Wave Accessibility Validator was used for ensuring all accessibility standards w
 
 ![Wave Validation](./documentation/validation/accessibility-validation.png)
 
+#### JavScript validation
+
+JSHint was used to validate the code in script.js. No major issues were found.
+
+![JSHint validation](./documentation/validation/jshint-validation.png)
+
 ### Manual testing
 
 ## Deployment
