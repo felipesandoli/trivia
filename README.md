@@ -17,6 +17,7 @@ Developed by: [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandol
 - [Technologies](#technologies)
 - [Features](#features)
     -[Header, Logo and Instruction Modal](#header-logo-and-instructions-modal)
+    -[Footer](#footer)
 - [Testing](#testing)
     - [Validation](#validation)
         -[HTML Validation](#html-validation)
@@ -95,6 +96,12 @@ The header consists of a clickable logo that takes the user back to the home pag
 ![Header](./documentation/features/header.png)
 
 ![Instructions Modal](./documentation/features/game-instructions.png)
+
+### Footer
+
+The footer contains the credits to the site developer, links to the developer linkedin and github pages as well as a link to the contact us form
+
+![Fotter](./documentation/features/footer.png)
 
 ## Testing
 
