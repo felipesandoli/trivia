@@ -83,6 +83,7 @@ The following tools were also used during development:
 - Github
 - Google Fonts
 - Chrome Dev Tools
+- [Favicon](https://www.favicon.cc/)
 
 ## Features
 
