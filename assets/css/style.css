@@ -302,3 +302,9 @@ footer {
         flex-direction: row;
     }
 }
+
+@media screen and (max-height: 700px) {
+    #game-stage {
+        height: 400px;
+    }
+}
