@@ -109,7 +109,7 @@ function displayQuestion(question, questionNumber) {
     
     // add all answers to a single array with objects containing the answer and true or false for correct and incorrect answers.
     let answers = [{answer: question.correct_answer, correct: true}];
-    for (incorrectAnswers of question.incorrect_answers) {
+    for (let incorrectAnswers of question.incorrect_answers) {
         answers.push({answer: incorrectAnswers, correct: false});
     }
     
