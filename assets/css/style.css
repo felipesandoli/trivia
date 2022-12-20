@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 /* Header, logo and instructions button */
