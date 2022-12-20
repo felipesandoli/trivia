@@ -87,6 +87,14 @@ The following tools were also used during development:
 
 ## Features
 
+### Header, Logo and Instructions Modal
+
+The header consists of a clickable logo that takes the user back to the home page and a how to play button that opens a modal where the instructions are displayed. The user can restart the game by clicking on the logo and also see the instructions from any point in the game.
+
+![Header](./documentation/features/header.png)
+
+![Instructions Modal](./documentation/features/game-instructions.png)
+
 ## Testing
 
 ### Validation
