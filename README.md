@@ -16,6 +16,7 @@ Developed by: [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandol
     - [Wireframes](#wireframes)
 - [Technologies](#technologies)
 - [Features](#features)
+    -[Header, Logo and Instruction Modal](#header-logo-and-instructions-modal)
 - [Testing](#testing)
     - [Validation](#validation)
         -[HTML Validation](#html-validation)
