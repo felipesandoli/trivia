@@ -50,7 +50,6 @@ The objective of the website is to provide a trivia quiz where the user can test
 - As a user, I want to know how I performed in the quiz through a score system.
 - As a user, I want to be able to send a feedback message to the site owner.
 - As a user, I want to create a username to get a personalized message before starting the game.
-- As a user, I want to be able to send my feedback to the site owner.
 
 ### Site Owner Stories
 
@@ -180,6 +179,21 @@ JSHint was used to validate the code in script.js. No major issues were found.
 ![JSHint validation](./documentation/validation/jshint-validation.png)
 
 ### Manual testing
+
+#### Testing User Stories
+
+| User Story | Testing |
+| ---------- | ------- |
+| As a user, I want instructions on how to play the game. | Clicking on the HOW TO PLAY button in the header opens a modal with the game instructions. |
+| As a user, I want to play the game and test my knowledge. | By following the steps in the game instructions or simply following the instructions in the game window, the user will receive 10 random themed questions with 4 possible answers for each question, being only one correct. The game progresses as the user answers the questions. |
+| As a user, I want the game to display the correct answer when I get it wrong so I can improve my knowledge in the topic. | When the user chooses the incorrect answer, the answer chosen is displayed with a red background and the correct answer is displayed with a green background. In this way the user can see that they got the wrong answer and which one is teh correct. |
+| As a user, I want to know how I performed in the quizz through a score system. | After answering all 10 questions, the user is presented with a final window where they can see how many questions they got right. |
+| As a user, I want to be able to send a feedback message to the site owner. | Clicking in the mail icon in the footer will take the user to the contact us page where they can send a message to the site owner. |
+| As a user, I want to create a username to get a personalized message before starting the game. | In the first window, displayed when the page loads, the user must enter a username before starting the game. All messages shown will be personalized to include their username. The user can play as many times as they want with the same username, or if they would like to change it, they can click on the logo in the header to return to the home page where the initial window will be displayed again. |
+| As the site owner, I want to provide a fun game that is intuitive for the user. | In all game windows, an message is displayed so the user can know what they have to do next. Game instructions are available in any stage of the quizz. New random questions are loaded everytime the user starts the game, so they always have different questions when playing the game. |
+| As the site owner, I want to provide a way for the user to get in touch. | A contact us page can be accessed through a mail icon in the footer. |
+| As the site owner, I want to allow the user to find my github and linkedin pages easily. | These can also be found in the footer. |
+| As the site owner, I want the website to be fully responsive so the user can play it accross multiple devices. | The deplyed website was tested in multiple devices, including iOS (iPhone SE, iPhone 13, iPhone 11 PRO, iPad Air), Android (Google Pixel 5), and on a windows desktop using Google Chrome and Microsoft Edge. |
 
 ## Deployment
 
