@@ -18,17 +18,19 @@ Developed by: [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandol
     - [Wireframes](#wireframes)
 - [Technologies](#technologies)
 - [Features](#features)
-    -[Header, Logo and Instruction Modal](#header-logo-and-instructions-modal)
-    -[Game Stage](#game-stage)
-    -[Footer](#footer)
-    -[Contact Us Form](#contact-us-form)
+    - [Header, Logo and Instruction Modal](#header-logo-and-instructions-modal)
+    - [Game Stage](#game-stage)
+    - [Footer](#footer)
+    - [Contact Us Form](#contact-us-form)
 - [Future Improvements](#future-improvements)
 - [Bugs](#bugs)
 - [Testing](#testing)
     - [Validation](#validation)
-        -[HTML Validation](#html-validation)
-        -[CSS Validation](#css-validation)
-        -[Accessibility Validation](#accessibility-validation)
+        - [HTML Validation](#html-validation)
+        - [CSS Validation](#css-validation)
+        - [Accessibility Validation](#accessibility-validation)
+        - [Lighthouse](#lighthouse)
+        - [JavScript Validation](#javscript-validation)
     - [Manual Testing](#manual-testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -174,7 +176,13 @@ Wave Accessibility Validator was used for ensuring all accessibility standards w
 
 ![Wave Validation](./documentation/validation/accessibility-validation.png)
 
-#### JavScript validation
+#### Lighthouse
+
+The lighthouse performance validator from Google Dev Tools was used to check the website performancs. An overall score of 99 was achieved.
+
+![Lighthouse](./documentation/validation/lighthouse.png)
+
+#### JavScript Validation
 
 JSHint was used to validate the code in script.js. No major issues were found.
 
