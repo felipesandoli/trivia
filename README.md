@@ -19,6 +19,7 @@ Developed by: [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandol
 - [Technologies](#technologies)
 - [Features](#features)
     -[Header, Logo and Instruction Modal](#header-logo-and-instructions-modal)
+    -[Game Stage](#game-stage)
     -[Footer](#footer)
 - [Testing](#testing)
     - [Validation](#validation)
@@ -98,6 +99,27 @@ The header consists of a clickable logo that takes the user back to the home pag
 ![Header](./documentation/features/header.png)
 
 ![Instructions Modal](./documentation/features/game-instructions.png)
+
+### Game Stage
+
+When the page first loads, the user is presented a welcome window where they can enter their username.
+
+![Welcome Window](./documentation/features/welcome-window.png)
+
+After entering their chosen username and clicking on the play button, second window with a greeting message will be displayed.
+
+![Greeting Window](./documentation/features/greeting-window.png)
+
+The user can then click on the START button to start the game. At this stage, the window will stay blank while the questions are loaded from the API. This is intentional as a visual representation of the loading time. After the questions are loaded, the first question will be displayed. The user can then chose one of the answers by clicking on it. If they get it right, the score is incremented and the answer button turns green, if they choose the wrong answer, the button turns red and the correct answer is also displayed. The next button is displayed after the question is answered.
+
+![First Question](./documentation/features/first-question.png) 
+![Correct Answer](./documentation/features/correct-answer.png)
+![Incorrect Answer](./documentation/features/incorrect-answer.png)
+
+After answering the 10 questions. A final window is displayed, here the user will get a customized message depending on how well they went on the challenge, and they will also get their final score (how many questions they got right). The user can also start the game again with new questions by clicking on the PLAY AGAIN button.
+
+![Congratulations](./documentation/features/congratulations.png)
+![Better Luck Next Time](./documentation/features/better-luck-next-time.png)
 
 ### Footer
 
