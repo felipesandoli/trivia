@@ -1,4 +1,6 @@
-# Trivia 
+# LevelUP! Videogame Trivia 
+
+![Responsivity Mockup](./documentation/responsive-mockup.png)
 
 [Visit the live webpage](https://felipesandoli.github.io/trivia/)
 
