@@ -48,6 +48,16 @@ header {
     
 }
 
+.logo-first {
+    font-weight: 900;
+    font-size: 200%;
+}
+
+.logo-second {
+    font-weight: 900;
+    font-size: 150%;
+}
+
 #instructions-btn {
     margin-right: 15px;
 }
@@ -139,10 +149,6 @@ header {
     padding: 5px 15px;
     background-color: var(--text);
     color: var(--game-area);
-}
-
-#welcome .logo {
-    font-size: 175%;
 }
 
 .btn {
