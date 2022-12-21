@@ -49,8 +49,8 @@ function validateUsername () {
     let username = document.getElementById("username");
     if (username.value === "") {
         alert("Please enter a username");
-    } else if (username.value.length < 5){
-        alert("Please choose a username with at least 5 characters");
+    } else if (username.value.length < 3){
+        alert("Please choose a username with at least 3 characters");
     } else {
         localStorage.setItem("username", username.value);
         displayGameWindow();
