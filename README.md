@@ -23,6 +23,7 @@ Developed by: [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandol
     -[Footer](#footer)
     -[Contact Us Form](#contact-us-form)
 - [Future Improvements](#future-improvements)
+- [Bugs](#bugs)
 - [Testing](#testing)
     - [Validation](#validation)
         -[HTML Validation](#html-validation)
@@ -142,6 +143,11 @@ Future improvements to the site includes:
 - A loading modal to be displayed while the questions are being loaded. At the moment the window stays blank.
 - A timer to increase the challenge.
 - Different difficulty levels which the user can choose (easy, medium, hard).
+- Leaderboard
+
+## Bugs
+
+One bug can be found in the deployed website. In mobiles, when the onscreen keyboard is shown to type in the username, the footer is shown in front of the game stage due to the reduced size of the screen.
 
 ## Testing
 
