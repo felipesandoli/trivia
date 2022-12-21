@@ -70,7 +70,6 @@ function loadQuestions() {
     .then(() => runGame(0));
 }
 
-
 // This function hides the greetings and final window before calling the loadQuestions function, the time in which the window stays blank
 // is the time spent loading the questions, the next game window will only appear after the questiosn are loaded.
 function startGame() {
@@ -79,6 +78,7 @@ function startGame() {
     startGameWindow.classList.add("hidden");
     loadQuestions();
 }
+
 /**
  *  Display the question window, call function for displaying the question content and add event listeners for the answer buttons.
  *  Clicking on an answer will call the function that cheks the answer
@@ -196,7 +196,6 @@ function showNextQuestion() {
     // run game with next question
     (questionNumber < 10) ? runGame(questionNumber) : displayFinalScore();
 }
-
 
 /**
  *  Resets the color of the answer buttons.
