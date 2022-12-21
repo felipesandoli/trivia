@@ -150,6 +150,8 @@ Future improvements to the site includes:
 
 One bug can be found in the deployed website. In mobiles, when the onscreen keyboard is shown to type in the username, the footer is shown in front of the game stage due to the reduced size of the screen.
 
+During development, the buttons that changed background color for giving a feedback for correct and incorrect answer maintained their background color as red or green when displaying the next question, the answers didn't return to the original background color. This was fixed by creating two new classes (correct and incorrect classes) that would be added to the answer buttons when the user clicked on an answer, and removed when the next question would be displayed. 
+
 ## Testing
 
 ### Validation
