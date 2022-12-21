@@ -305,6 +305,21 @@ footer {
 
 @media screen and (max-height: 700px) {
     #game-stage {
-        height: 400px;
+        height: 350px;
+    }
+
+    header {
+        height: 50px;
+        padding-top: 5px;
+    }
+
+    .btn {
+        height: 45px;
+        width: 125;
+    }
+
+    footer {
+        font-size: 80%;
+        height: 50px;
     }
 }
