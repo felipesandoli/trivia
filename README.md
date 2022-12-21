@@ -22,6 +22,7 @@ Developed by: [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandol
     -[Game Stage](#game-stage)
     -[Footer](#footer)
     -[Contact Us Form](#contact-us-form)
+- [Future Improvements](#future-improvements)
 - [Testing](#testing)
     - [Validation](#validation)
         -[HTML Validation](#html-validation)
@@ -133,6 +134,14 @@ The footer contains the credits to the site developer, links to the developer li
 The user can click on the message icon in the footer to access the contact form. They can fill this form to send a feedback, or give a suggestion for the site owner. Currently the form is sent to the From Dump by Code Institute.
 
 ![Contact Form](./documentation/features/contact-form.png)
+
+## Future Improvements
+
+Future improvements to the site includes:
+
+- A loading modal to be displayed while the questions are being loaded. At the moment the window stays blank.
+- A timer to increase the challenge.
+- Different difficulty levels which the user can choose (easy, medium, hard).
 
 ## Testing
 
