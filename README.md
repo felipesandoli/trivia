@@ -21,6 +21,7 @@ Developed by: [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandol
     -[Header, Logo and Instruction Modal](#header-logo-and-instructions-modal)
     -[Game Stage](#game-stage)
     -[Footer](#footer)
+    -[Contact Us Form](#contact-us-form)
 - [Testing](#testing)
     - [Validation](#validation)
         -[HTML Validation](#html-validation)
@@ -126,6 +127,12 @@ After answering the 10 questions. A final window is displayed, here the user wil
 The footer contains the credits to the site developer, links to the developer linkedin and github pages as well as a link to the contact us form
 
 ![Fotter](./documentation/features/footer.png)
+
+### Contact Us Form
+
+The user can click on the message icon in the footer to access the contact form. They can fill this form to send a feedback, or give a suggestion for the site owner. Currently the form is sent to the From Dump by Code Institute.
+
+![Contact Form](./documentation/features/contact-form.png)
 
 ## Testing
 
