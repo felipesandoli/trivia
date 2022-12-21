@@ -129,7 +129,7 @@ After answering the 10 questions. A final window is displayed, here the user wil
 
 ### Footer
 
-The footer contains the credits to the site developer, links to the developer linkedin and github pages as well as a link to the contact us form
+The footer contains the credits to the site developer, links to the developer linkedin and github pages as well as a link to the contact us form. The footer layout was inspired by this github [repository](https://aleksandracodes.github.io/CI_PP2_SunshineGuessing/).
 
 ![Fotter](./documentation/features/footer.png)
 
