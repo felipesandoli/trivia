@@ -73,6 +73,8 @@ The font Inconsolata, taken from Google Fonts was used for the body of the websi
 
 ### Wireframes
 
+The website was developed with a mobile first approach following the bellow wireframes. Media queries were used to resize the elements for bigger screens.
+
 ![Mobile wireframes](./documentation/design/wireframes/mobile-wireframes.png)
 
 ## Technologies
